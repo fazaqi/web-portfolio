@@ -45,7 +45,7 @@ p {
 button {
   background-color: #ffd803;
   color: #272343;
-  padding: 1.2rem 1.75rem;
+  padding: 1.25rem 1.75rem;
   border: transparent;
 
   font-weight: 600;
@@ -119,4 +119,14 @@ section {
   height: 90px;
   margin: 0px auto;
   background-color: #272343;
+}
+
+@media screen and (max-width: 450px) {
+  button {
+    padding: 1rem 1.5rem;
+  }
+  .socials {
+    width: 30px;
+    right: 10px;
+  }
 }
