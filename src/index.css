@@ -59,7 +59,32 @@ button:hover {
 }
 
 section {
-  background-color: #e3f6f5;
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+h3.subheading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+
+  font-weight: 600;
+}
+
+h3.subheading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #27234351;
 }
 
 .footer {
@@ -147,8 +172,18 @@ section {
 }
 
 @media screen and (max-width: 450px) {
+  section {
+    padding: 60px 0;
+  }
   button {
     padding: 1rem 1.5rem;
+  }
+  h3.subheading::after {
+    top: 0;
+    width: 100%;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #27234351;
   }
   .socials {
     width: 30px;
