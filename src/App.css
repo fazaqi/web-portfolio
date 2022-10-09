@@ -1,9 +1,11 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 0;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .header__wrapper {
@@ -22,7 +24,8 @@
 
 .header__wrapper ul li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0;
+  margin-left: 30px;
   font-weight: 500;
   font-size: 14px;
   text-transform: capitalize;
@@ -31,6 +34,7 @@
 
 .header__wrapper button {
   padding: 0.75rem 1rem;
+  margin-left: 30px;
 }
 
 .header__wrapper.mobile {
@@ -136,6 +140,31 @@
   margin: 0 auto;
 }
 
+.about__tech {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about__tech ul {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+.about__tech ul li {
+  font-size: 13px;
+}
+
+.about__tech ul li::before {
+  content: "\f054"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1em;
+  margin-right: 10px;
+  color: #272343;
+  margin-bottom: 15px;
+}
+
 /* Contact Style */
 .contact {
   max-width: 500px;
@@ -148,6 +177,13 @@
 
 .contact p {
   margin-bottom: 25px;
+}
+
+/* Works style */
+.works img {
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 450px) {

@@ -19,9 +19,15 @@ function Header() {
             <div></div>
             <div className="d-flex align-items-center">
               <ul>
-                <li>about</li>
-                <li>work</li>
-                <li>contact</li>
+                <a href="/#about">
+                  <li>about</li>
+                </a>
+                <a href="/#works">
+                  <li>work</li>
+                </a>
+                <a href="/#contact">
+                  <li>contact</li>
+                </a>
               </ul>
 
               <button>Resume</button>
@@ -53,9 +59,15 @@ function Header() {
         style={{ width: "min(75vw, 400px)", position: "fixed" }}
       >
         <ul>
-          <li>about</li>
-          <li>work</li>
-          <li>contact</li>
+          <a href="/#about">
+            <li>about</li>
+          </a>
+          <a href="/#works">
+            <li>work</li>
+          </a>
+          <a href="/#contact">
+            <li>contact</li>
+          </a>
         </ul>
         <button>Resume</button>
       </Drawer>

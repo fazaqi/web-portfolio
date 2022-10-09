@@ -11,7 +11,13 @@ function Contact() {
             at rerum obcaecati tempora, delectus ab debitis molestiae est
             corporis, impedit nemo, in adipisci quia.
           </p>
-          <button>Say Hello</button>
+          <a
+            href="mailto:syauqieza@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <button>Say Hello</button>
+          </a>
         </div>
       </section>
     </>
