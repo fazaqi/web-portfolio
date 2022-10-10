@@ -14,6 +14,20 @@
   align-items: center;
 }
 
+.header__wrapper img.logo {
+  max-width: 50px;
+  width: 100%;
+}
+
+.header__wrapper svg {
+  width: 50px;
+}
+
+.header__wrapper svg:hover .bottom_svg {
+  fill: #ffd803;
+  transition: all 0.3s;
+}
+
 .header__wrapper ul {
   margin: 0;
   margin-right: 15px;
@@ -92,13 +106,13 @@
 }
 
 .mobile__drawer ul li {
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: 16px;
+  margin-bottom: 20px;
   text-transform: capitalize;
 }
 
 .mobile__drawer button {
-  font-size: 20px;
+  font-size: 16px;
   width: max-content;
 }
 
@@ -184,6 +198,97 @@
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
+}
+
+.works .row {
+  position: relative;
+}
+
+.works_link {
+  margin-top: 25px;
+}
+
+.works_link a {
+  background-color: #ffd803;
+  color: #272343;
+  padding: 0.75rem 1.75rem;
+  border: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  transition: all 0.3s ease;
+}
+
+.works_link a:hover {
+  background-color: #e9c600;
+}
+
+.works .items {
+  margin-bottom: 100px;
+}
+
+.works .items .desc {
+  background-color: #e3f6f5;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px -15px #c4c4c4;
+}
+
+.works .items .desc p {
+  margin: 0;
+}
+
+.works_desc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+  width: 100%;
+  max-width: 500px;
+}
+
+.works_desc.right {
+  text-align: right;
+  left: unset;
+  right: 0;
+}
+
+.works_desc h4 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.works .tech__stack {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.works .tech__stack ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+
+.works .tech__stack.right ul {
+  justify-content: flex-end;
+}
+
+.works .tech__stack ul li {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.works .tech__stack.right ul li {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 450px) {

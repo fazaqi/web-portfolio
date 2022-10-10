@@ -11,14 +11,17 @@ function About() {
                 <h3 className="subheading">About Me</h3>
 
                 <p>
-                  Hello, Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Dolorum, doloribus nobis. Cumque, autem, ipsam corporis
-                  officia blanditiis nihil nulla esse facilis aliquam, earum
-                  velit nisi?
+                  Hi, My name is Eza. I enjoy coding, especially in web
+                  development. My coding journey started back in 2017. I began
+                  to learn how to code and how to build a website, and then I
+                  decided to take a coding bootcamp to improve my skills in web
+                  development.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  recusandae harum facilis quas odit earum.
+                  After I finished my studies in a coding bootcamp, I got my
+                  first web developer job in Yokesen. Until now, I'm still
+                  working at Yokesen, with the main focus of building a web app
+                  to help a marketplace seller manage their store.
                 </p>
                 <p>
                   Here are a few technologies I’ve been working with recently:

@@ -57,7 +57,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <h6>Designed & Built by Eza Syauqi</h6>
+        <h6>Built by Eza Syauqi</h6>
       </div>
     </>
   );
