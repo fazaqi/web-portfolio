@@ -1,9 +1,11 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 0;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .header__wrapper {
@@ -22,7 +24,8 @@
 
 .header__wrapper ul li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0;
+  margin-left: 30px;
   font-weight: 500;
   font-size: 14px;
   text-transform: capitalize;
@@ -31,6 +34,7 @@
 
 .header__wrapper button {
   padding: 0.75rem 1rem;
+  margin-left: 30px;
 }
 
 .header__wrapper.mobile {
@@ -136,6 +140,31 @@
   margin: 0 auto;
 }
 
+.about__tech {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about__tech ul {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+.about__tech ul li {
+  font-size: 13px;
+}
+
+.about__tech ul li::before {
+  content: "\f054"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1em;
+  margin-right: 10px;
+  color: #272343;
+  margin-bottom: 15px;
+}
+
 /* Contact Style */
 .contact {
   max-width: 500px;
@@ -148,6 +177,104 @@
 
 .contact p {
   margin-bottom: 25px;
+}
+
+/* Works style */
+.works img {
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.works .row {
+  position: relative;
+}
+
+.works_link {
+  margin-top: 25px;
+}
+
+.works_link a {
+  background-color: #ffd803;
+  color: #272343;
+  padding: 0.75rem 1.75rem;
+  border: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  transition: all 0.3s ease;
+}
+
+.works_link a:hover {
+  background-color: #e9c600;
+}
+
+.works .items {
+  margin-bottom: 100px;
+}
+
+.works .items .desc {
+  background-color: #e3f6f5;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px -15px #c4c4c4;
+}
+
+.works .items .desc p {
+  margin: 0;
+}
+
+.works_desc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+  width: 100%;
+  max-width: 500px;
+}
+
+.works_desc.right {
+  text-align: right;
+  left: unset;
+  right: 0;
+}
+
+.works_desc h4 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.works .tech__stack {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.works .tech__stack ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+
+.works .tech__stack.right ul {
+  justify-content: flex-end;
+}
+
+.works .tech__stack ul li {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.works .tech__stack.right ul li {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 450px) {

@@ -14,7 +14,7 @@ function Contact() {
           <a
             href="mailto:syauqieza@gmail.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer noopener"
           >
             <button>Say Hello</button>
           </a>

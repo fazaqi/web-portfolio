@@ -22,7 +22,6 @@ function Hero() {
             className="big__heading"
             speed="50"
           />
-          {/* <h1 className="big__heading">Fariz Eza Syauqi.</h1> */}
           <p>
             I’m a Front-End Web Developer specialized in building and developing
             a Web App. I'm currently working at{" "}
