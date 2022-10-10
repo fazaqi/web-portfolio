@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 function Hero() {
   return (
     <>
-      <div className="hero__wrapper">
+      <div className="hero__wrapper" id="hero">
         <div className="container">
           <h5>Hi, my name is</h5>
           <TypeAnimation
@@ -31,7 +31,9 @@ function Hero() {
             <span style={{ color: "#0165d3" }}>Laravel</span>, but i'm still
             open to explore other technology.
           </p>
-          <button>Check out my works!</button>
+          <a href="/#works">
+            <button>Check out my works!</button>
+          </a>
         </div>
       </div>
     </>

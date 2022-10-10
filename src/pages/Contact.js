@@ -5,7 +5,7 @@ function Contact() {
     <>
       <section id="contact" className="contact">
         <div className="container text-center">
-          <h2>Get In Touch</h2>
+          <h2>Contact Me</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fuga
             at rerum obcaecati tempora, delectus ab debitis molestiae est

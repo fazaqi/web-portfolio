@@ -14,6 +14,21 @@
   align-items: center;
 }
 
+.header__wrapper img.logo {
+  max-width: 50px;
+  width: 100%;
+}
+
+.header__wrapper svg {
+  width: 50px;
+  cursor: pointer;
+}
+
+.header__wrapper svg:hover .bottom_svg {
+  fill: #ffd803;
+  transition: all 0.3s;
+}
+
 .header__wrapper ul {
   margin: 0;
   margin-right: 15px;
