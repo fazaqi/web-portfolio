@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import logo from "../assets/images/e-logo.png";
+import resume from "../resume.pdf";
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -62,8 +63,9 @@ function Header() {
                   <li>contact</li>
                 </a>
               </ul>
-
-              <button>Resume</button>
+              <a href={resume} target="_blank" rel="noreferrer noopener">
+                <button>Resume</button>
+              </a>
             </div>
           </div>
 
@@ -96,17 +98,19 @@ function Header() {
         style={{ width: "min(75vw, 400px)", position: "fixed" }}
       >
         <ul>
-          <a href="/#about">
+          <a href="/#about" onClick={toggleDrawer}>
             <li>about</li>
           </a>
-          <a href="/#works">
+          <a href="/#works" onClick={toggleDrawer}>
             <li>work</li>
           </a>
-          <a href="/#contact">
+          <a href="/#contact" onClick={toggleDrawer}>
             <li>contact</li>
           </a>
         </ul>
-        <button>Resume</button>
+        <a href={resume} target="_blank" rel="noreferrer noopener">
+          <button>Resume</button>
+        </a>
       </Drawer>
     </>
   );
