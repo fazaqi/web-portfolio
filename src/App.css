@@ -21,7 +21,6 @@
 
 .header__wrapper svg {
   width: 50px;
-  cursor: pointer;
 }
 
 .header__wrapper svg:hover .bottom_svg {
